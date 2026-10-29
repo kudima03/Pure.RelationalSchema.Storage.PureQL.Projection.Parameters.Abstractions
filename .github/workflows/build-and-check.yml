@@ -1,0 +1,31 @@
+name: .NET build & check
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src
+    steps:
+    - uses: actions/checkout@v7
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v6
+      with:
+        dotnet-version: 10.x.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Restore tools
+      run: dotnet tool restore
+    - name: Build
+      run: dotnet build --no-restore -warnaserror
+    - name: Code style check by dotnet format
+      run: dotnet format --verify-no-changes
+    # csharpier is disabled: its default print width of 100 conflicts with the
+    # 90-column limit, and dotnet format is the authoritative style check.
+    #- name: Code style check by csharpier
+    #  run: dotnet csharpier check .
