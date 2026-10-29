@@ -23,7 +23,9 @@ public interface IParameter
     /// <c>True</c> or <c>False</c>; a <c>yyyy-MM-dd</c> date; a <c>HH:mm:ss</c> time; a
     /// <c>yyyy-MM-ddTHH:mm:ss</c> datetime in UTC, without an offset; a lower case
     /// <c>D</c>-format uuid. Times and datetimes carry fractional seconds, up to seven
-    /// digits, only when present. A typed null is the empty string.
+    /// digits, only when present. A typed null is the empty string. A list parameter,
+    /// <see cref="ListParameter.IListParameter"/>, holds a JSON array of its items'
+    /// values instead.
     /// </summary>
     public IString Value { get; }
 }
