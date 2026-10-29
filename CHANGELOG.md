@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `IListParameter`: a list bound to a list parameter (`ListParamInteger` … `ListParamUuid`, read by `in`), the Pure-style counterpart of the PureQL list literals `ListLiteralInteger` … `ListLiteralUuid`. It is an `IParameter` whose `Type` is the list type (`integerList` … `uuidList`, never nullable), with `Items`, the list's values as parameters of the item type, never typed nulls. Its `Value` is informational: a JSON array of the items' cell texts, such as `["paid","shipped"]`.
+
 ## [0.1.0-preview.0.1.0] - 2026-10-29
 
 ### Added
