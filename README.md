@@ -204,13 +204,14 @@ PureQLProjection projection = new PureQLProjection(datasets, query, literals);
 
 ## Dependencies
 
-- [`Pure.Primitives.Abstractions`](https://github.com/kudima03/Pure.Primitives.Abstractions/tree/4.3.0) — `IString` and `IBool`
+- [`Pure.Primitives.Abstractions`](https://github.com/kudima03/Pure.Primitives.Abstractions/tree/4.4.0) — `IString` and `IBool`
 
 ## Target Frameworks
 
 - .NET 8
 - .NET 9
 - .NET 10
+- .NET 11
 
 ## Related packages
 
