@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0-preview.0.3.0] - 2026-11-11
+
+### Added
+
+- .NET 11 support: the package now also targets `net11.0`.
+
+### Changed
+
+- Updated `Pure.Primitives.Abstractions` to 4.4.0.
+
 ## [0.1.0-preview.0.2.0] - 2026-10-30
 
 ### Added
@@ -20,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `IParameterType`: the PureQL type of a bound query parameter, its name and whether it is the nullable (typed-null) variant.
 - `IParameter`: a value bound to a query parameter of `Pure.RelationalSchema.Storage.PureQL.Projection`, its type and its value as invariant cell text; the Pure-style counterpart of the PureQL literals.
 
-[Unreleased]: https://github.com/kudima03/Pure.RelationalSchema.Storage.PureQL.Projection.Parameters.Abstractions/compare/0.1.0-preview.0.2.0...HEAD
+[Unreleased]: https://github.com/kudima03/Pure.RelationalSchema.Storage.PureQL.Projection.Parameters.Abstractions/compare/0.1.0-preview.0.3.0...HEAD
+[0.1.0-preview.0.3.0]: https://github.com/kudima03/Pure.RelationalSchema.Storage.PureQL.Projection.Parameters.Abstractions/compare/0.1.0-preview.0.2.0...0.1.0-preview.0.3.0
 [0.1.0-preview.0.2.0]: https://github.com/kudima03/Pure.RelationalSchema.Storage.PureQL.Projection.Parameters.Abstractions/compare/0.1.0-preview.0.1.0...0.1.0-preview.0.2.0
 [0.1.0-preview.0.1.0]: https://github.com/kudima03/Pure.RelationalSchema.Storage.PureQL.Projection.Parameters.Abstractions/releases/tag/0.1.0-preview.0.1.0
