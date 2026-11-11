@@ -34,7 +34,7 @@ A list parameter's `Value` is informational, since the projection reads `Items`:
 
 Converting a parameter to a literal, parsing and validation belong to the implementations in `Pure.RelationalSchema.Storage.PureQL.Projection.Parameters`. Do not add records here, and do not reference `PureQL.CSharp.Model` or the projection: in XML docs, name their types with `<c>`, not `<see cref>`.
 
-**Dependencies:** only `Pure.Primitives.Abstractions` (4.3.0, the version `Pure.Primitives` 3.7.0 depends on). Keep its version aligned with what the projection resolves, and do not add references to packages that come transitively.
+**Dependencies:** only `Pure.Primitives.Abstractions` (4.4.0). Keep its version aligned with what the projection resolves, and do not add references to packages that come transitively.
 
 **Documentation:** `GenerateDocumentationFile` is on, so a public type or member without an XML doc comment fails the build (CS1591 under `-warnaserror`). The XML docs ship in the package.
 
