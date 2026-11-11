@@ -211,6 +211,7 @@ PureQLProjection projection = new PureQLProjection(datasets, query, literals);
 - .NET 8
 - .NET 9
 - .NET 10
+- .NET 11
 
 ## Related packages
 
